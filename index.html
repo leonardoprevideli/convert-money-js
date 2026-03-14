@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Convert Money</title>
 </head>
+
 <body>
-    
+    <main>
+        <img src="./assets/logo.gif" alt="Convert Money Logo">
+
+        <div class="frame">
+            <label for="fromMoney">
+                <span>Converter <b>de</b></span>
+                <select name="fromMoney" id="selectFrom">
+                    <option value="real">R$ Real</option>
+                    <option value="dollar">US$ Dollar</option>
+                    <option value="euro">€ Euro</option>
+                    <option value="libra">£ Libra</option>
+                    <option value="bitcoin">₿ Bitcoin</option>
+                </select>
+            </label>
+
+            <label for="toMoney">
+                <span>Converter <b>para</b></span>
+                <select name="toMoney" id="selectTo">
+                    <option value="dollar">US$ Dollar</option>
+                    <option value="real">R$ Real</option>
+                    <option value="euro">€ Euro</option>
+                    <option value="libra">£ Libra</option>
+                    <option value="bitcoin">₿ Bitcoin</option>
+                </select>
+            </label>
+
+            <label for="moneyValue" class="inputValue">
+                <span><b>Valor</b></span>
+                <input name="moneyValue" type="number">
+            </label>
+            
+            <button>Converter</button>
+
+            <div class="outcome">
+                <div class="fromOutcome">
+                    <img class="fromCountryFlag" src="" alt="">
+                    <span class="fromCurrencyName"></span>
+                    <span class="fromCurrencyValue"></span>
+                </div>
+
+                <div class="toOutcome">
+                    <img class="toCountryFlag" src="" alt="">
+                    <span class="toCurrencyName"></span>
+                    <span class="toCurrencyValue"></span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="response">
+
+        </div>
+
+    </main>
 </body>
 <script src="script.js"></script>
+
 </html>
